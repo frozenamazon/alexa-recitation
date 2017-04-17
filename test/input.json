@@ -9,14 +9,15 @@
     },
     "new": true
   },
-  "request": {
+  "request": {   
     "type": "IntentRequest",
-    "requestId": "EdwRequestId.TestSession1",
-    "timestamp": "2016-05-19T01:07:55Z",
+    "requestId": "EdwRequestId.78fb1802-1f0e-49fa-97bf-c5a3ee1b7b1f",
+    "locale": "en-US",
+    "timestamp": "2017-04-17T22:49:54Z",
     "intent": {
-      "name": "AMAZON.StartOverIntent"
-    },
-    "locale": "en-US"
+      "name": "AMAZON.StartOverIntent",
+      "slots": {}
+    }
   },
   "version": "1.0"
 }

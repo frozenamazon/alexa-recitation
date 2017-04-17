@@ -69,7 +69,7 @@ sts.assumeRole({
         };
 
         var lambda = require('../src/index.js');
-        var event = require('./guess100.json');
+        var event = require('./input.json');
         lambda.handler(event, context());
     }
 });
