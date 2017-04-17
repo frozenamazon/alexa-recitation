@@ -1,0 +1,22 @@
+{
+  "session": {
+    "sessionId": "SessionId.Session1",
+    "application": {
+      "applicationId": "amzn1.ask.skill.024b05c9-7e7f-4217-a583-0c062062f110"
+    },
+    "user": {
+      "userId": "amzn1.ask.account.testaccount1"
+    },
+    "new": true
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.TestSession1",
+    "timestamp": "2016-05-19T01:07:55Z",
+    "intent": {
+      "name": "AMAZON.StartOverIntent"
+    },
+    "locale": "en-US"
+  },
+  "version": "1.0"
+}
