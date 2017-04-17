@@ -15,7 +15,8 @@
 // the role must have a trusted policy with
 // "lambda.amazonaws.com" and "arn:aws:iam::<YOUR ACCOUNT ID>:user/<YOUR USER>"
 
-var roleArn = 'arn:aws:iam::068250831250:role/lambda_basic_execution';
+// var roleArn = 'arn:aws:iam::068250831250:role/lambda_basic_execution';
+var roleArn = 'arn:aws:iam::335524922613:role/lambda_exec';
 var region = 'us-east-1';
 /* DO NOT MAKE CHANGE BELOW THIS */
 var aws = require('aws-sdk');
@@ -50,13 +51,13 @@ sts.assumeRole({
         console.log('Cannot assume role');
         console.log(err, err.stack);
     } else { // successful response
-        
+
         aws.config.update({
             accessKeyId: data.Credentials.AccessKeyId,
             secretAccessKey: data.Credentials.SecretAccessKey,
             sessionToken: data.Credentials.SessionToken
         });
-       
+
         var Module = require('module');
         var originalRequire = Module.prototype.require;
 
